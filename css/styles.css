@@ -7,6 +7,8 @@
   --bgc: #2f303a;
   --contacts-color: rgba(255, 255, 255, 0.6);
   --filter-btn-bgc: #f5f4fa;
+  --header-border-color: #ececec;
+  --item-block-border: #eeeeee;
 }
 
 body {
@@ -55,8 +57,7 @@ img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border: 1px solid var(--header-border-color);
 }
 
 .header-list {
@@ -95,11 +96,14 @@ img {
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link:hover,
@@ -108,21 +112,27 @@ img {
 }
 
 .header-tel {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-mail {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-mail:hover,
@@ -267,7 +277,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 30px;
 }
 
 .team-member-position {
@@ -275,6 +284,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .footer {
@@ -293,7 +308,9 @@ img {
   color: var(--first-color);
   margin-bottom: 20px;
 }
-
+.adress {
+  margin-bottom: 9px;
+}
 .adress-item {
   display: block;
   font-style: normal;
@@ -301,7 +318,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--first-color);
-  margin-bottom: 9px;
 }
 
 .adress-item:hover,
@@ -318,9 +334,12 @@ img {
   color: var(--contacts-color);
 }
 
+.footer-item-mail {
+  margin-bottom: 9px;
+}
+
 .footer-mail {
   display: block;
-  margin-bottom: 9px;
 }
 
 .footer-mail:hover,
@@ -337,6 +356,7 @@ img {
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-btn {
@@ -352,7 +372,6 @@ img {
   border-color: transparent;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 
 .filter-btn:hover,
@@ -380,4 +399,10 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.item-block {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--item-block-border);
+  border-left: 1px solid var(--item-block-border);
+  border-right: 1px solid var(--item-block-border);
 }
